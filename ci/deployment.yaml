@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment # Kubernetes resource kind we are creating
+metadata:
+  name: demo-k8s
+spec:
+  selector:
+    matchLabels:
+      app: demo-k8s
+  replicas: 1 # Number of replicas that will be created for this deployment
+  template:
+    metadata:
+      labels:
+        app: demo-k8s
+    spec:
+       containers:
+        - name: demo-k8s
+          image: neogicel/demo-app:6.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8081 
