@@ -1,15 +1,30 @@
-…or create a new repository on the command line
+## <h1>Application Spring Boot</h1>
+***
+<img src="https://blog.mossroy.fr/wp-content/uploads/2019/09/spring-boot-logo.png" alt="drawing" height="280px"/>
 
-echo "# serveur-dev" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/neogiciel/demo.git
-git push -u origin main
+## Informations Générales
+***
+Mise en place d'une application Spring-boot 
+## Technologies
+***
+Technologies utilisées:
+* Java 17 
+* Maven 3.6
+* Spring-boot: 3.2
+## Instalation
+***
 
-…or push an existing repository from the command line
+Lancement de l'application Spring-boot<br>
+```
+$ mvn  clean
+$ mvn spring-boot:run
+```
+Le service est accessible sur http://localhost:8080
 
-git remote add origin https://github.com/neogiciel/demo.git
-git branch -M main
-git push -u origin main
+## FAQs
+***
+**Aucun**
+
+
+
+
